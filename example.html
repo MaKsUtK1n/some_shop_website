@@ -1,0 +1,62 @@
+<head>
+    <title>
+        TEST
+    </title>
+    <style>
+        body {
+            background-color: rgb(66, 66, 66);
+            display: grid;
+            grid-template-columns: [line1] 50px [line2] 42dvw [line3] auto [line4] 42dvw [line5] 50px [end];
+            grid-template-rows: [line1] 50px [line2] 35dvh [line3] auto [line4] 35dvh [line5] 50px [line6];
+            margin: none;
+            padding: none;
+}
+#n1 {
+        grid-column-start: line2;
+        grid-column-end: line3;
+        grid-row-start: line2;
+        grid-row-end: line3;
+        background-color: rgb(156, 101, 101);
+}
+#n2 {
+        grid-column-start: line4;
+        grid-column-end: line5;
+        grid-row-start: line2;
+        grid-row-end: line3;
+        background-color: rgb(156, 101, 101);
+}
+#n3 {
+        grid-column-start: line2;
+        grid-column-end: line3;
+        grid-row-start: line4;
+        grid-row-end: line5;
+        background-color: rgb(156, 101, 101);
+}
+#n4 {
+        grid-column-start: line4;
+        grid-column-end: line5;
+        grid-row-start: line4;
+        grid-row-end: line5;
+        background-color: rgb(156, 101, 101);
+}
+.container {
+    color: rgb(255, 193, 193);
+    font-size: 10dvh;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="n1" class="container">
+1
+    </div>
+    <div id="n2" class="container">
+2
+    </div>
+    <div id="n3" class="container">
+3
+    </div>
+    <div id="n4" class="container">
+4
+    </div>
+</body>

@@ -1,0 +1,183 @@
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: none;
+            background-color: #181818;
+        }
+
+        #topBar {
+            padding: none;
+            width: 100svw;
+            height: 12svh;
+            background-color: #555555;
+            margin: none;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 10svh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #fakeSlide {
+            width: 65%;
+            height: 20%;
+            background-color: #d9d9d933;
+            margin: auto;
+            top: 8%;
+            position: relative;
+            display: grid;
+            grid-template-columns: [line1] 1dvw [line2] auto [line3] 25% [line4] auto [line5] 25% [line6] auto [line7] 25% [line8] auto [line9] 1dvw [end];
+            grid-template-rows: [line1] 2svh [line2] auto [line3] 6dvh [line4] auto [line5] 2svh [end];
+        }
+
+        .fakebuttons {
+            background-color: #000000;
+            opacity: 0.5;
+            position: inherit;
+        }
+
+        #leftbutton {
+            float: left;
+            border-top-right-radius: 1dvh;
+            border-bottom-right-radius: 1dvh;
+            grid-column-start: line1;
+            grid-column-end: line2;
+            grid-row-start: line3;
+            grid-row-end: line4;
+        }
+
+        #rightbutton {
+            float: right;
+            border-top-left-radius: 1dvh;
+            border-bottom-left-radius: 1dvh;
+            grid-column-start: line9;
+            grid-column-end: end;
+            grid-row-start: line3;
+            grid-row-end: line4;
+        }
+
+        .slimg {
+            opacity: 1;
+            position: inherit;
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .slimg:hover {
+            transform: scale(1.03);
+        }
+
+        #slimg1 {
+            grid-column-start: line3;
+            grid-column-end: line4;
+            grid-row-start: line2;
+            grid-row-end: line5;
+        }
+
+        #slimg2 {
+            grid-column-start: line5;
+            grid-column-end: line6;
+            grid-row-start: line2;
+            grid-row-end: line5;
+        }
+
+        #slimg3 {
+            grid-column-start: line7;
+            grid-column-end: line8;
+            grid-row-start: line2;
+            grid-row-end: line5;
+        }
+        #productsContainer {
+            display: grid;
+            margin: auto;
+            width: 65%;
+            height: 35%;
+            background-color: transparent;
+            top: 15%;
+            position: relative;
+            grid-template-columns: [l1] auto [l2] 2svw [l3] auto [l4] 2svw [l5] auto [l6] 2svw [l7] auto [end];
+            grid-template-rows: [l1] auto [l2] 3svh [end];
+        }
+        .product {
+            border-radius: 20px;
+            position:relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .productimg {
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg);
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+        }
+        .productimg:hover {
+            transform: scale(1.05);
+        }
+        .product:hover{
+            outline: 2px solid #956aad;
+        }
+        #product1 {
+            grid-column-start: l1;
+            grid-column-end: l4;
+            grid-row-start: l1;
+            grid-row-end: l2;
+        }
+        #product2 {
+            grid-column-start: l5;
+            grid-column-end: l6;
+            grid-row-start: l1;
+            grid-row-end: l2;
+        }
+        #product3 {
+            grid-column-start: l7;
+            grid-column-end: end;
+            grid-row-start: l1;
+            grid-row-end: l2;
+        }
+        .bottom_product_text {
+            width: 100%;
+            height: 20%;
+            background-color: rgba(255, 255, 255, 0.24);
+            position: absolute;
+            bottom: 0;
+            border-bottom-left-radius: 19px;
+            border-bottom-right-radius: 19px;
+            text-align: center;
+            font-size: 5dvh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="topBar">
+        P.Drilla Shop
+    </div>
+
+    <div id="fakeSlide">
+        <div class="fakebuttons" id="leftbutton"></div>
+        <div class="fakebuttons" id="rightbutton"></div>
+        <div class="slimg" id="slimg1"></div>
+        <div class="slimg" id="slimg2"></div>
+        <div class="slimg" id="slimg3"></div>
+    </div>
+
+    <div id="productsContainer">
+        <div class="product" id="product1">
+            <div class="productimg"></div>
+            <div class="bottom_product_text">Пополнить стим</div>
+        </div>
+        <div class="product" id="product2">
+            <div class="productimg"></div>
+            <div class="bottom_product_text">Премиум</div>
+        </div>
+        <div class="product" id="product3">
+            <div class="productimg"></div>
+            <div class="bottom_product_text">Звезды</div>
+        </div>
+    </div>
+</body>

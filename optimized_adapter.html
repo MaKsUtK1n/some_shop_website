@@ -1,0 +1,220 @@
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <style id="BaseCSS">
+        body {
+            margin: none;
+            padding: none;
+            align-items: center;
+            background-color: #121212;
+        }
+        @keyframes load {
+            70% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        @keyframes hide {
+            70% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+        b {
+            font-family: "Kumbh Sans";
+            font-size: 5dvw;
+            position: absolute;
+            color: #ffffff;
+            top: 3.5dvh;
+            left: 17dvw;
+        }
+    </style>
+    <style id="DesktopCSS">
+            @media (min-width: 800px) {
+                .block {
+                    position: absolute;
+                    width: 45dvw;
+                    background-color: rgba(0, 0, 0, 0);
+                    height: 20dvh;
+                    border-radius: 100em;
+                    box-shadow: 0px 0px 0px rgb(255, 255, 255), inset 0px 0px 5px white;
+                    backdrop-filter: blur(1000px);
+                    vertical-align: auto;
+                    padding: auto;
+                    opacity: 0;
+                }
+                .links {
+                    background-color: transparent;
+                    width: 40dvw;
+                    height: 10dvh;
+                    position: absolute;
+                    left: 30vw;
+                    border-radius: 100em;
+                    transition: 1s;
+                    opacity: 0;
+                    box-shadow: 0px 0px 0px rgb(255, 255, 255), inset 0px 0px 5px white;
+                    animation: 1s forwards load;
+                    backdrop-filter: blur(30px);
+                }
+                img {
+                    width: 8.5dvh;
+                    height: 8.5dvh;
+                    border-radius: 100em;
+                    top: 0.7dvh;
+                    left: 0.5dvw;
+                    position: inherit;
+                }
+                .links:hover {
+                    box-shadow: 0px 0px 50px rgb(255, 255, 255), inset 0px 0px 5px white;
+                }
+                #n1 {
+                    opacity: 0;font-size: 5dvw;top: 31dvh;left: 40dvw;animation: 6s forwards load;
+                }
+                #n2 {
+                    opacity: 0;font-size: 10.5dvw;filter: blur(5em);top: 31dvh;left: 30dvw;animation: 5s forwards load;
+                }
+                #n3 {
+                    top: 68dvh; left: 54dvw;   animation: 4s forwards load, 1s forwards hide; animation-delay: 0s, 7s;
+                }
+                #n4 {
+                    left: 14dvw;
+                }
+                #n5 {
+                    top: 68dvh; left: 1dvw;    animation: 1s forwards load, 1s forwards hide; animation-delay: 0s, 7s;
+                }
+                #n6 {
+                    top: 12dvh; left: 54dvw;   animation: 2s forwards load, 1s forwards hide; animation-delay: 0s, 7s;
+                }
+                #n7 {
+                    left: 12dvw;
+                }
+                #n8 {
+                    top: 12dvh; left: 1dvw;    animation: 3s forwards load, 1s forwards hide; animation-delay: 0s, 7s;
+                }
+                #n9 {
+                    left: 8dvw;
+                }
+                #n10 {
+                    top: 50dvh;animation-delay: 8s;
+                }
+                #n11 {
+                    top: 2dvh;position: inherit;left: 15dvw;
+                    font-size: 4dvh;
+                }
+                #n12 {
+                    top: 65dvh;animation-delay: 8.5s;
+                }
+                #n13 {
+                    top: 2dvh;position: inherit;left: 12dvw;
+                    font-size: 4dvh;
+                }
+            }
+    </style>
+    <style id="MobileCSS">
+            @media screen and (max-width: 800px) {
+                b {
+                    font-family: "Kumbh Sans";
+                    font-size: 5dvw;
+                    position: absolute;
+                    color: #ffffff;
+                    top: 1.4dvh;
+                    left: 17dvw;
+                }           
+                .block {
+                    position: absolute;
+                    width: 45dvw;
+                    background-color: rgba(0, 0, 0, 0);
+                    height: 7dvh;
+                    border-radius: 100em;
+                    box-shadow: 0px 0px 0px rgb(255, 255, 255), inset 0px 0px 5px white;
+                    backdrop-filter: blur(1000px);
+                    vertical-align: auto;
+                    padding: auto;
+                    opacity: 0;
+                }
+                .links {
+                    background-color: transparent;
+                    width: 25dvw;
+                    height: 4dvh;
+                    position: absolute;
+                    left: 20dvw;
+                    border-radius: 100em;
+                    transition: 0.5s;
+                    opacity: 0;
+                    box-shadow: 0px 0px 0px rgb(255, 255, 255), inset 0px 0px 5px white;
+                    animation: 1s forwards load;
+                    backdrop-filter: blur(30px);
+                }
+                .links:hover {
+                    box-shadow: 0px 0px 50px rgb(255, 255, 255), inset 0px 0px 5px white;
+                }
+                img {
+                width: 7dvh;
+                height: 7dvh;
+                border-radius: 100em;
+                top: 0.5dvh;
+                left: 1dvw;
+                position: inherit;
+                }
+                #n1 {
+                    opacity: 0;font-size: 5dvh;top: 35dvh;left: 15dvw;    animation: 6s forwards load
+                }
+                #n2 {
+                    opacity: 0;font-size: 5dvh;filter: blur(5em);top: 35dvh;left: 15dvw;    animation: 5s forwards load
+                }
+                #n3 {
+                    top: 60dvh; left: 52dvw;   animation: 4s forwards load, 1s forwards hide; animation-delay: 0s, 7s;
+                }
+                #n4  {
+                    left: 14dvw;
+                }
+                #n5 {
+                    top: 60dvh; left: 3dvw;    animation: 1s forwards load, 1s forwards hide; animation-delay: 0s, 7s;
+                }
+                #n6 {
+                    top: 20dvh; left: 52dvw;   animation: 2s forwards load, 1s forwards hide; animation-delay: 0s, 7s;
+                }
+                #n7 {
+                    left: 12dvw;
+                }
+                #n8 {
+                    top: 20dvh; left: 3dvw;    animation: 3s forwards load, 1s forwards hide; animation-delay: 0s, 7s;
+                }
+                #n9 {
+                    left: 8dvw;
+                }
+                #n10 {
+                    top: 50dvh;animation-delay: 8s;
+                }
+                #n11 {
+                    top: 2dvh;position: inherit;
+                }
+                #n12 {
+                    top: 62dvh;animation-delay: 8.5s;
+                }
+                #n13 {
+                    top: 0.5dvh;position: inherit;
+                }
+            }
+    </style>
+</head>
+<body>
+    <b id="n1">eternity</b>
+    <b id="n2">eternity</b>
+    <div class="block" id="n3">
+<b id="n4">pretty</b>
+    </div>
+    <div class="block" id="n5">
+<b>fast</b>
+    </div>
+    <div class="block" id="n6">
+<b id="n7">efficient</b>
+    </div>
+    <div class="block" id="n8">
+<b id="n9">user friendly</b>
+    </div>
+    <div class="links" id="n10" onclick="window.location.href='https://t.me/eternity_adapter'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Telegram_X_2019_Logo.svg" alt="">
+        <b id="n11">channel</b>
+    </div>
+    <div class="links" id="n12" onclick="window.location.href=`${window.location}steam`">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/archive/8/83/20220611141425%21Steam_icon_logo.svg" alt="">
+        <b id="n13">steam replenish</b>
+    </div>
+</body>

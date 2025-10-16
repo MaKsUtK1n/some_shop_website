@@ -1,0 +1,66 @@
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+    <script src="https://unpkg.com/sync-fetch"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #121212;
+            padding: 0;
+        }
+        b {
+            font-family: "Kumbh Sans";
+            color: #FFFFFF;
+            position: absolute;
+        }
+        .payment_method {
+            height: 35dvh;
+            width: 20dvw;
+            font-family: "Kumbh Sans";
+            color: #FFFFFF;
+            font-size: 3dvh;
+            position: absolute;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            transition: 0.5s;
+        }
+        .payment_method:hover {
+            width: 22dvw;
+            height: 36dvh;
+            cursor: pointer;
+        }
+        #n1 {
+            top: 35dvh;left: 25dvw;background-color: #8b00ff;
+        }
+        #n1:hover {
+            top: 34.5dvh;
+            left: 24dvw;
+        }
+        #n2 {
+            top: 35dvh;left: 55dvw;background-color: #10b7ee;
+        }
+        #n2:hover {
+            top: 34.5dvh;
+            left: 54dvw;
+        }
+    </style>
+</head>
+<body>
+    <b style="font-size: 5svw;top:1dvh;left: 35dvw;">Choose your</b>
+    <b style="font-size: 5svw;top:11dvh;left: 30dvw;">payment system</b>
+    <b style="font-size: 5svw;top:1dvh;left: 35dvw;filter: blur(200px);">Choose you</b>
+    <b style="font-size: 5svw;top:11dvh;left: 30dvw;filter: blur(200px);">payment system</b>
+
+
+    <button class="payment_method" id="n1" onclick="window.location.href= '%YMLINK%'">
+        YOOMONEY
+    </button>
+    
+    <button class="payment_method" id="n2" onclick="window.location.href= '%CBLINK%'">
+        CRYPTOBOT
+    </button>
+
+    <button id="submit">
+        Check payment
+    </button>
+</body>

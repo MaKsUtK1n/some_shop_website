@@ -1,0 +1,145 @@
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+    <script src="https://unpkg.com/sync-fetch"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #121212;
+            padding: 0;
+        }
+        b {
+            font-family: "Kumbh Sans";
+            color: #FFFFFF;
+            position: absolute;
+        }
+        input {
+            width: 40dvw;
+            height: 10dvh;
+            position: absolute;
+            font-family: "Kumbh Sans";
+            background-color: #ffffff0a;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 0px rgb(255, 255, 255), inset 0px 0px 5px white;
+            backdrop-filter: blur(30px);
+            color: #ffffff;
+            font-size: 2dvw;
+            padding-left: 2dvw;
+            padding-right: 2dvw;
+            transition: 0.5s;
+            text-align: center;
+            outline: none;
+        }
+        input::placeholder {
+            color: #FFFFFF;
+            left: 100dvw;
+            font-size: 2dvw;
+            opacity: 0.5;
+        }
+        input:hover {
+            box-shadow: 0px 0px 20px rgb(255, 255, 255), inset 0px 0px 10px white;
+        }
+        input:focus {
+            box-shadow: 0px 0px 50px rgb(255, 255, 255), inset 0px 0px 10px white;
+        }
+        button {
+            width: fit-content;
+            min-width: 25dvw;
+            height: 10dvh;
+            position: absolute;
+            font-family: "Kumbh Sans";
+            background-color: #ffffff0a;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 0px rgb(255, 255, 255), inset 0px 0px 5px white;
+            backdrop-filter: blur(30px);
+            color: #ffffff;
+            font-size: 2dvw;
+            transition: 0.5s;
+            outline: none;
+        }
+        button:hover {
+            box-shadow: 0px 0px 20px rgb(255, 255, 255), inset 0px 0px 10px white;
+        }
+        button:focus {
+            box-shadow: 0px 0px 50px rgb(255, 255, 255), inset 0px 0px 10px white;
+        }
+        #topBlock {
+            width: 100vw;
+            top: 26vh;
+            left: 25vw;
+            height: 7vh;
+            background-color: transparent;
+            position: fixed;
+            width: 50vw;
+            opacity: 0;
+            text-align: center;
+        }
+        #warning {
+            font-size: 3dvh;
+            position: relative; 
+            color: rgb(209, 62, 62);
+            text-shadow: 0px 0px 50px red;
+        }
+    </style>
+</head>
+<body>
+    <b style="font-size: 7svw;top:1dvh;left: 37dvw;">eternity</b>
+    <b style="font-size: 7svw;top:11dvh;left: 40dvw;">steam</b>
+    <b style="font-size: 7svw;top:1dvh;left: 37dvw;filter: blur(200px);">eternity</b>
+    <b style="font-size: 7svw;top:11dvh;left: 40dvw;filter: blur(200px);">steam</b>
+
+    <input id="account_username" style="left: 30dvw;top: 35dvh;" type="text" placeholder="account username">
+    <input id="deposit_input" style="left: 30dvw;top: 50dvh;" type="text" placeholder="deposit sum">
+    <input id="promo_code" style="left: 30dvw;top: 65dvh;" type="text" placeholder="promo code">
+
+    <button id="button" style="left: 37.5dvw;top: 80dvh;" onclick="" disabled>pay</button>
+    <div id="topBlock">
+        <b id="warning">TEXT</b>
+    </div>
+</body>
+<script>
+        const deposit_input = document.getElementById("deposit_input")
+        const account_username = document.getElementById("account_username")
+        const promo_code = document.getElementById("promo_code")
+        const topblock = document.getElementById("topBlock")
+        const warning = document.getElementById("warning")
+
+        const button = document.getElementById("button")
+        const fetch = require('sync-fetch')
+
+        deposit_input.addEventListener("input", input_handler)
+        account_username.addEventListener("input", input_handler)
+        promo_code.addEventListener("input", input_handler)
+
+        const url = window.location.protocol + "//" + window.location.host + "/api/inputs"
+        function input_handler(event) {
+            api_query_url = `${url}?deposit=${deposit_input.value}&username=${account_username.value}&promo=${promo_code.value}`
+            result = fetch(api_query_url).text()
+            console.log(result)
+            res = result.split(";")
+            if (res[0] == "H") {
+                button.disabled = true
+                button.style.opacity = 0.3
+                warning.innerText = res[1]
+                topblock.style.opacity = '1'
+                topblock.animate(
+                    {
+                        opacity: [1, 0.9, 0],
+                        offset: [0, 0.8], // Shorthand for [ 0, 0.8, 1 ]
+                    },
+                    1500,
+                );
+                setTimeout(function() {topblock.style.opacity = '0';}, 1500)
+            }
+            else {
+                button.disabled = false
+                button.style.opacity = 1
+                button.innerText = res[1]
+                button.onclick = function (){
+                    window.location.href = window.location.protocol + "//" + window.location.host + `/pay?deposit=${deposit_input.value}&username=${account_username.value}&promo=${promo_code.value}`
+                }
+            }
+        }
+
+</script>

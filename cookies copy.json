@@ -1,0 +1,180 @@
+[
+    {
+        "name": "__CHAT_UNAUTH_APP_MARKER",
+        "value": "ru.yoo.money.webchat.unauthorized",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1786536853,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "__CHAT_UNAUTH_CLIENT_ID",
+        "value": "xPEbfxyrsATjLxZlTVF8pVqjUTnuug4hQL9vAEDLUTeXxhJHdiDMP4bIXhEL5NFY4FaDXdyUdmkN0aqIWPr4hjvOMHk8SOCcFOCfK9HLV3mFDSKYOpifnja8sbEWX5wF8sWmh5KfNXAh5uOhB4dkK2EeFs0gFmuoJnmIJpdJZHchVN2f1xI5QwMaiYt8l72Ecg75DLLCzwZQUkDZARKRDd4ZVAJwweBN5eMYtt7LSnlqceRCYlagyZC1j3WHhqbB",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1786536853,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "__zzatw-ymoney",
+        "value": "MDA0dC0cTApcfEJcdGswPi17CT4VHThHKHIzd2UsO2YdaEwSU0BVTXlbFhZ3ayRMEAtbPT5udSlxIE5ifGIieF4/dRdZRkE2XBpLdWUvDDk6a2wkUlFDS2N8GgprLxoYfG4kUQgNYUBBc3UlLTFmJ3xLKTUdETJeV1U0O2dBVH9NbHARGkBUC0wLXAlDNV8ga2tKTUQoFVlxDV49QXJzLUJpJmRIXSJDXD91F1lGQTZcGkt1ZS8MOTprbCRSUUNLY3waCmsvGhh8biNYEBNiQEdxeiUtMWYnfEspNR0RMl5XVTQ7Z0FUWA==FjD9ig==",
+        "domain": ".yoomoney.ru",
+        "path": "/",
+        "expires": 1784657263,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "_ym_d",
+        "value": "1751976853",
+        "domain": ".yoomoney.ru",
+        "path": "/",
+        "expires": 1783512853,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "_ym_isad",
+        "value": "1",
+        "domain": ".yoomoney.ru",
+        "path": "/",
+        "expires": 1753247479,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "_ym_uid",
+        "value": "175197685373041404",
+        "domain": ".yoomoney.ru",
+        "path": "/",
+        "expires": 1783512853,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "cfidsw-ymoney",
+        "value": "/vn9OlmzQJdL+pr775azxStm2VNIyFyiC1/Ng7FVFskMT7cTSq1lSffY+pMku0c0kvg4wKUBs6oBnbHQtiZHYcSZJsX9BnBxCMbsqK3R6iA+rHG+bTzuCiAhdsCuK1yIc4TH0inq4aWNYesXOQ+AP76F7S9636IYQ/IrCi4=",
+        "domain": ".yoomoney.ru",
+        "path": "/",
+        "expires": 1784713624,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "has_accepted_gdpr",
+        "value": "1",
+        "domain": ".yoomoney.ru",
+        "path": "/",
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "DAT",
+        "value": "AwCLrr_vD8EXuxZsuRwrFYfC0-eYmJazvEWyp0Ubg7C10CtR9PW-gXVnyl6HVJWfMmlTk9I_ecm18FokSXVr",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1763487316,
+        "httpOnly": true,
+        "secure": true
+    },
+    {
+        "name": "DL",
+        "value": "AQAAQWH16ZcBAAAfn7zbXE2UdVKDA2l57o18DvpWbaNPHx2-Vf2-S3rEZA",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1786536864,
+        "httpOnly": true,
+        "secure": true
+    },
+    {
+        "name": "domain_sid",
+        "value": "2bgVcOKorTJFDtKrlQygk%3A1751976853635",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1752581653,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "main",
+        "value": "\"3f0f5586fe9acc51\"",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1751980454,
+        "httpOnly": true,
+        "secure": false
+    },
+    {
+        "name": "previousUrl",
+        "value": "yoomoney.ru%2F",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1753110448,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "SessionToken",
+        "value": "AwABAEMeZgBMLAgAXNENLpgBAACWRutOc92m8OsyWxP--jTGn8T6xP1qXBCxMnNF1MovwveRouXDhoY8qeuayubCBKE",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1763487314,
+        "httpOnly": true,
+        "secure": true
+    },
+    {
+        "name": "srv_id48",
+        "value": "9c757fb4a246b32d926b23d3bdcd48b5",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "tildasid",
+        "value": "1753108648313.162282",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1753110448,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "tildauid",
+        "value": "1753108648313.715664",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1760884648,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "tmr_lvidTS",
+        "value": "1751976853278",
+        "domain": ".yoomoney.ru",
+        "path": "/",
+        "expires": 1780748053,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "tmr_lvid",
+        "value": "d3d56bf7f05fc0a68576d5e5af848e17",
+        "domain": ".yoomoney.ru",
+        "path": "/",
+        "expires": 1780748053,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "name": "yoouid",
+        "value": "155570771751976849",
+        "domain": "yoomoney.ru",
+        "path": "/",
+        "expires": 1786536852,
+        "httpOnly": true,
+        "secure": true
+    }
+]
